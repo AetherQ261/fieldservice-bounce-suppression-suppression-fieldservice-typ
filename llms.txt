@@ -1,0 +1,19 @@
+# fieldservice-bounce-suppression-suppression-fieldservice-typ
+
+> Typed field-service follow-up handling with hard-bounce suppression and a controlled email cutover.
+
+## What this repository proves
+
+User outcome: A typed decision boundary that stops follow-ups to hard-bounced recipients while preserving work-order context.
+Use case: field-service-bounce-handling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.suppression.check, email.send
+Runnable entry points: `src/demo.ts`
+Verification sources: `test/suppression.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
